@@ -1,0 +1,12 @@
+body {
+background-color: black;
+background-image: url("./bilder/jojos-bizarre-adventure-josuke-higashikata-1222376-1280x0.jpeg");
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 100px;
+    color: blueviolet;
+    width: 800px;
+    margin-left: 100px;
+}
