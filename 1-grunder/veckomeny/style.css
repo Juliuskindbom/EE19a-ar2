@@ -1,0 +1,31 @@
+body {
+background-color: hotpink;
+}
+
+table {
+border-spacing: 2px;
+}
+
+caption {
+background-image: url("./bilder/trash_with_liner.jpg");
+font-size: 100px;
+padding: 20px;
+}
+
+tr {
+
+}
+
+th {
+padding: 10px;
+}
+
+td {
+border: 1px solid rgb(143, 6, 6);
+border-radius: 20px;
+background-color: hotpink;
+}
+
+img {
+
+}
