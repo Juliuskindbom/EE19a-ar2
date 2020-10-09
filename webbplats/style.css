@@ -1,0 +1,58 @@
+/* CSS HEX */
+:root {
+    --tangerine: #f08700ff;
+    --orange-web: #f49f0aff;
+    --yellow-munsell: #efca08ff;
+    --light-sea-green: #00a6a6ff;
+    --columbia-blue: #bbdef0ff;
+}
+
+
+
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* sidans utseende */
+
+body {}
+.kontainer {
+    width: 800px;
+    margin: auto;
+}
+
+/* sidans rubriker */
+
+.kontainer h1 {}
+.kontainer h2 {}
+
+/* menyns utseende */
+
+.kontainer ul {
+    list-style-type: none;
+}
+.kontainer ul li {
+    display: inline;
+}
+.kontainer ul a {
+    background: blueviolet;
+    color: yellow;
+}
+
+/* bildrutans utseende */
+
+.kontainer figure {}
+.kontainer figure figcaption {}
+
+/* sidans text */
+
+.kontainer p {}
+.kontainer p a {}

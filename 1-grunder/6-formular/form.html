@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enkelt formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="fnamn">förnamn</label>
+        <input id="fnamn" type="text" placeholder="Viktor">
+        <label for="enamn">efternamn</label>
+        <input id="enamn" type="text" placeholder="Larsson">
+        <label for="epost">epost</label>
+        <input id="epost" type="text" placeholder="viktor.larsson@gmail.com">
+
+        <labe>Kön</label>
+        <div>
+            <label for="kön"></label>
+            <input type="radio" name="kön"> Man
+            <input type="radio" name="kön"> Kvinna
+            <input type="radio" name="kön" checked> Ful
+        </div>
+
+        <label>Allergi</label>
+        <div>
+            <input type="checkbox" name="allergi"> Gluten
+            <input type="checkbox" name="allergi"> laktos
+            <input type="checkbox" name="allergi"> Nötter
+
+        </div>
+
+        <label>Hemland</label>
+        <select name="" id="">
+        <option value="1">USA</option>
+        <option value="2" selected>Nordkorea</option>
+        <option value="3">Italien</option>
+        <option value="4">Frankrike</option>
+        <option value="5">Weebland</option>
+        <option value="6">Nej</option>
+        </select>
+
+        <label>Kommentar</label>
+
+        <textarea cols="30" rows="10">Skriv din dummma värdelösa kommentar här nu va din lilla skit</textarea>
+
+        <button>Skicka</button>
+    </form>
+</body>
+</html>
