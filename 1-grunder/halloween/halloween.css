@@ -1,0 +1,36 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-color: black;
+}
+h1 {
+    color: white;
+    margin-top: 100px;
+    margin-left: 220px;
+    font-size: 40px;
+    font-family: 'Frijole', cursive;
+
+}
+p {
+font-family: 'Syne Mono', monospace;
+color: black; 
+background-color:#ffa31a;
+border-radius: 6px;
+height: 500px;
+width: 299px;
+font-size: 29px;
+}
+
+a{
+color: white;
+}
+
