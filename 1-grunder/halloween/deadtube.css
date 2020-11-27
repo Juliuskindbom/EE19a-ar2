@@ -13,17 +13,33 @@ body{
     background-color: black;
 }
 h1{
-
+font-size: 55px;
+color: whitesmoke;
+}
+h2{
+    color: white;
+    font-size: 27px;
+    margin-right: auto;
 }
 p{
+color: whitesmoke;
+font-size: 21px;
 
 }
 .bild1{
-    float: right;
+    position: relative;top:auto;
+    float: left;
     height: 500px;
     width: 380px;
 }
 .bild2{
     height: 400px;
-    width: 400px;
+    width: 400px;   
+    float: right;
+    position: relative;bottom:-105px;
+}
+.bild3{
+    height: 500px;
+    width: 640px;
+    position: relative;left: 55px;
 }
