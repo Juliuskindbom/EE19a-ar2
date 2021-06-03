@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>läsa av inputrutor</h1>
+        <h2>input</h2>
+        <label>Ange tal1 <input class="tal1" type="text"></label>
+        <label>Ange tal2 <input class="tal2" type="text"></label>
+        <button onclick="räkna()"> tryck knapp för att räkna </button>
+        <h2>output</h2>
+        <label>plus <input class="plus" type="text"></label>
+        <label>minus <input class="minus" type="text"></label>
+    </div>
+    <script>
+        function räkna() {
+          const eRuta1 = document.querySelector(".tal1");
+          const eRuta2 = document.querySelector(".tal2");
+          const eRuta3 = document.querySelector(".plus");
+          const eRuta4 = document.querySelector(".minus");
+
+          console.log(eRuta1.value);
+          console.log(eRuta2.value);
+
+          var tal1 = Number(eRuta1.value);
+          var tal2 = Number(eRuta2.value);
+
+          var plus = tal1 + tal2;
+          console.log(plus);
+
+          eRuta3.value = plus;
+
+          var minus = tal1 - tal2;
+          console.log(minus);
+        }
+    </script>
+</body>
+</html>

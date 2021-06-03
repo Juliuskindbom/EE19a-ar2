@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Räkna ut körsträcka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Räkna ut antal liter</h1>
+        <p>Ange hur länge du kör och förbrukar.</p>
+        
+        <div class="kol2">
+            <h3>Input</h3><br>
+            <label>Antal Km:</label>
+            <input class="km" type="text" placeholder="Tex 300">
+            <label>Liter/mil:</label>
+            <input class="lm" type="text" placeholder="Tex 0.8">
+            <button class="raknaUt">Räkna ut!</button>
+        </div>
+
+        <h3>Output</h3>
+        <textarea class="output"></textarea>
+    </div>
+    <script>
+        const rutaDistans = document.querySelector(".km");
+        const rutaBensin = document.querySelector(".1m");
+        const knapp = document.querySelector("raknaUt");
+        const rutaOutput = document.querySelector(".output");
+
+        addEventListener("click", function () {
+            var distans = rutaDistans.value;
+            var liter = rutaBensin.value;
+            var förbrukning = distans * liter;
+            if (förbrukning < 50) {
+                rutaOutput.value = "Bilen har förbrukat " + förbrukning + " Liter kom ihåg att tanka"
+            } else {
+                rutaOutput.value = "Bilen har precis förbrukat " + förbrukning + " liter bensin, för resan " + rutaKm.value + " Km";
+            }
+        })
+    </script>
+</body>
+</html>
+

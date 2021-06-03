@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>boka rum</h1>
+        <h2>beställning</h2>
+        <label>ange namn <input type="text" class="namn"></label>
+        <label> ange antal nätter <input type="text" class="antal"></label>
+
+        <label>
+            ange rumstyp
+            <div>
+                <input type="radio" name="rumstyp"> enkelrum 800:- <br>
+                <input type="radio" name="rumstyp"> dubbelrum 1200:- <br>
+                <input type="radio" name="rumstyp"> familjerum 1500:-
+            </div>
+        </label>
+
+        <label>
+            ange tillägg
+            <div>
+                <input type="checkbox" class="wifi"> Wifi <br>
+                <input type="checkbox" class="parkerong"> Parkering <br>
+            </div>
+        </label>
+
+        <button>räkna ut</button>
+
+        <h2>uppskattad kostnad</h2>
+        <label>total pris <input type="text" class="total" disabled></label>
+    </div>
+    <script>
+        const rutaNamn = document.querySelector(".namn");
+        const rutaAntal = document.querySelector(".antal");
+
+        const radioEnkel = document.querySelector(".enkel");
+        const radioDubbel = document.querySelector(".dubbel");
+        const radioFamilj = document.querySelector(".familj")
+
+        const kryssWifi = document.querySelector(".wifi");
+        const kryssParkering = document.querySelector(".parkering");
+
+        const knappen = document.querySelectorAll("Button");
+
+        const rutaTotal = document.querySelector(".total");
+
+        var rumPris = 0;
+
+        radioEnkel.addEventListener("click", function () {
+            console.log("Du har klickat på radioknappen enkelrum")
+            rumPris = 800;
+        })
+        radioDubbel.addEventListener("click", function () {
+            console.log("Du har klickat på radioknappen dubbelrum")
+            rumPris = 1200;
+        })
+        radioFamilj.addEventListener("click", function () {
+            console.log("Du har klickat på radioknappen familjrum")
+            rumPris = 1500;
+        })
+        
+        knappen.addEventListener("click", function () {
+            console.log("Pris för rummet =", rumPris);
+        })
+    </script>
+</body>
+</html>

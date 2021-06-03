@@ -13,18 +13,25 @@ body{
     background-color: black;
 }
 h1{
-font-size: 55px;
+font-size: 53px;
 color: whitesmoke;
+font-family: 'Frijole', cursive;
 }
 h2{
     color: white;
-    font-size: 27px;
+    font-size: 25px;
     margin-right: auto;
+    font-family: 'Frijole', cursive;
+}
+a{
+    color: #ffa31a;
+    font-family: 'Syne Mono', monospace;
+    font-size: 29px;
 }
 p{
-color: whitesmoke;
-font-size: 21px;
-
+    color: whitesmoke;
+    font-size: 18.5px;
+    font-family: 'Syne Mono', monospace;
 }
 .bild1{
     position: relative;top:auto;

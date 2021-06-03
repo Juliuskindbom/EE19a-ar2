@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva text</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+            <label> x =<input type="text"></label>
+            <label> y = <input type="text"></label>
+            <button></button>
+            <button>rita fyrkant</button>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // Hitta elementet
+        const rityta = document.querySelector("canvas");
+        const rutaX = document.querySelector(".inputX");
+        const rutaY = document.querySelector(".inputY");
+        const rutaB = document.querySelector(".inputB");
+        const rutaH = document.querySelector(".inputH");
+        const rutaFärg = document.querySelector(".färg")
+        const knappRita =document.querySelector(".rita")
+        const knappSudda = document.querySelector(".sudda");
+
+
+        // Ställer in storleken
+        rityta.width = 600;
+        rityta.height = 600;
+
+        // Slå på ritmotorn
+        var ctx = rityta.getContext("2d");
+
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "pink";
+        ctx.fillRect(x, y, 50, 50);
+
+        knapp.addEventListener("click", function () {
+            x = rutaX.value;
+            y = rutaY.value;
+
+            var b = rutaB.value;
+            var h = rutaH.value;
+
+            ctx.fillStyle = "red";
+        ctx.fillRect(x, y, 50, 50);
+        })
+        knappSudda.addEventListener("click", function () {
+            ctx.clearRect(0, 0, 600, 600);
+        } )
+    </script>
+</body>
+</html>
+

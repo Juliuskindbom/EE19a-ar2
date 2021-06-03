@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="tryck()"> tryck knapp för att få veta årtal </button>
+    </div>
+    <script>
+        function tryck() {
+            for (var år = 1495; år > 1395; år -= 5) {
+                console.log("årtionden", år);
+            }
+        }
+    </script>
+</body>
+</html>

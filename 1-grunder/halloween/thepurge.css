@@ -1,0 +1,25 @@
+
+
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-family: 'Frijole', cursive;
+}
+p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+}
+a{
+    color: #ffa31a;
+    font-family: 'Syne Mono', monospace;
+    font-size: 29px;
+}
+.bilder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+}

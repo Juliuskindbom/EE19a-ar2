@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>querySelector() och value</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Hemlig text</h1>
+        <h2>Input</h2>
+        <label>Ange kod <input class="kod" type="text"></label>
+        <button>Visa hemlig text</button>
+
+        <h2>Output</h2>
+        <label>Svar <textarea></textarea></label>
+    </div>
+    <script>
+        const rutaKod = document.querySelector(".kod");
+        const knapp = document.querySelector("button");
+        const rutaSvar = document.querySelector("textarea");
+
+        knapp.addEventListener("click", function () {
+            console.log("klickat på knappen");
+            if (rutaKod.value == "55") {
+                rutaSvar.value = "Sippin' on straight chlorine, let the vibes\n" +
+                    "slide over me\n" +
+                    "This beat is a chemical, beat is a chemical\n" +
+                    "When I leave don't save my seat, I'll be back when it's all complete\n" +
+                    "The moment is medical, moment is medical\n" +
+                    "Sippin' on straight chlorine";
+            } else {
+                rutaSvar.value = "fel idiot!"
+            }
+        })
+    </script>
+</body>
+</html>

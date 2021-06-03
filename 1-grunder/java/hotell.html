@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>boka rum</h1>
+        <h2>beställning</h2>
+        <label>antal nätter <input type="text" class="antal"></label>
+        <label>enkelrum 800:-, dubbelrum 1200:-<input type="text" class="pris"><label>
+        <label>tillägg wifi 100:- <input type="text" class="wifi"></label>
+        <label>tillägg parkering 50:- <input type="text" class="parkering"></label>
+        <button>räkna ut</button>
+
+        <h2>uppskattad kostnad</h2>
+        <label>pris för rummet <input type="text" class="prisRummet"></label>
+        <label>pris för tillägg <input type="text" class="prisTillägg"></label>
+        <label>pris för bokning <input type="text" class="total"></label>
+    </div>  
+    <script>
+        const rutaAntal = document.querySelector(".antal");
+        const rutaPris = document.querySelector(".pris");
+        const rutaWifi = document.querySelector(".wifi");
+        const rutaParkering = document.querySelector(".parkering");
+        const knappen = document.querySelectorAll("Button");
+        const rutaPrisRummet = document.querySelector(".prisRummet");
+        const rutaPrisTillägg = document.querySelector(".prisTillägg");
+        const rutaTotal = document.querySelector(".total");
+
+        knappen.addEventListener("click", function () {
+            consol.log(rutaAntal.value);
+            console.log(rutaPris.value);
+            console.log(rutaWifi);
+            console.log(rutaParkering.value);
+
+            rutaPrisRummet.value = rutaAntal * rutaPris.value;
+
+            rutaPrisTillägg.value = Number (rutaWifi.value) + Number(rutaParkering.value);
+
+            rutaTotal.value = Number(rutaAntal.value * rutaPris.value) + Number (rutaWifi.value) + Number (rutaParkering.value);
+        })
+    </script>
+</body>
+</html>

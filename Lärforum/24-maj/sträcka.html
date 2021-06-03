@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Räkna ut körsträcka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Räkna ut körsträcka</h1>
+        <p>Ange hastighet för en bil och hur länge den kör.</p>
+        
+        <div class="kol2">
+            <h3>Input</h3><br>
+            <label>Hastighet:</label>
+            <input class="hastighet" type="text" placeholder="km/h">
+            <label>Tid:</label>
+            <input class="tid" type="text" placeholder="minuter">
+            <button class="raknaUt">Räkna ut!</button>
+        </div>
+
+        <h3>output</h3>
+        <textarea class="output"></textarea>
+    </div>
+    <script>
+        const rutaHastighet = document.querySelector(".hastighet");
+        const rutaTid = document.querySelector(".tid");
+        const knapp = document.querySelector(".raknaUt");
+        const rutaOutput = document.querySelector(".output");
+
+        knapp.addEventListener("click", function () {
+          var hastighet = rutaHastighet.value;
+          var tid = rutaTid.value;
+            var resultat = hastighet * tid / 60;
+            console.log(resultat);
+
+        rutaOutput.value = "du kör i " + resultat + " km/h";
+        })
+    </script>
+</body>
+</html>

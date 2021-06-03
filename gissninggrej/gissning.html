@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>test</h1>
+        <h2>input</h2>
+        <label>vad är 9+12 <input class="gissning" type="text"></label>
+
+        <button onclick="click"> tryck</button>
+        <h2>output</h2>
+        <label> svar <input class="svar" type="text"></label>
+
+    </div>
+    <script>
+        const eRutagissning = document.querySelector(".gissning");
+        const eRutasvar = document.querySelector(".svar");
+
+        function gissa(params) {
+            var gissning = eRutagissning.value
+
+            if (gissning == 21) {
+                eRutasvar.value = "21";
+            } else {
+                eRutasvar.value = "dum dum";
+            }
+        }
+
+    </script>
+</body>
+</html>

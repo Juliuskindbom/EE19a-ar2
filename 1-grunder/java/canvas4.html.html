@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hänga gubbe</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // hitta elementet
+        const rityta = document.querySelector("canvas");
+
+        //ställer in storleken
+        rityta.height = 600;
+        rityta.width = 800;
+
+        //slå på ritmotorn
+        var ctx = rityta.getContext("2d");
+
+        //rita sträckgubbe
+        //marken
+    ctx.beginPath();
+    ctx.linewidth = 10;
+    ctx.strokeStyle = "green";
+    ctx.moveTo(200, 500);
+    ctx.lineTo(200, 100);
+    //pålen
+    ctx.linewidth = 5;
+    ctx.strokeStyle = "brown";
+    ctx.moveTo(200, 500);
+    ctx.lineTo(200, 100);
+
+    //balken
+    ctx.lineTo(400, 100);
+    ctx.stroke();
+
+    //rep
+    ctx.lineTo(400, 150);
+    ctx.stroke();
+
+    //huvud
+    ctx.moveTo(450, 200)
+    ctx.arc(400, 200, 50, 0, 6.28);
+    ctx.stroke();
+
+    //kropp
+    ctx.moveTo(400, 250);
+    ctx.lineTo(400, 400);
+    ctx.stroke();
+
+    // ben
+    ctx.lineTo(450, 450);
+    ctx.moveTo(400, 450);
+    ctx.lineTo(350, 450);
+    ctx.stroke();
+    </script>
+</body>
+</html>
